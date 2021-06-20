@@ -14,7 +14,7 @@
         "unit": "minutes"
     },
     "bid_strategy": {
-        "price_side": "bid",
+        "price_side": "ask",
         "ask_last_balance": 0.0,
         "use_order_book": false,
         "order_book_top": 1,
@@ -36,66 +36,70 @@
         "name": "binanceus",
         "key": "",
         "secret": "",
-        "ccxt_config": {"enableRateLimit": true},
+        "ccxt_config": {
+            "enableRateLimit": true
+        },
         "ccxt_async_config": {
             "enableRateLimit": true,
             "rateLimit": 200
         },
         "pair_whitelist": [
             "DOGE/USD",
-"ETH/USD",
-"BTC/USD",
-"KNC/USD",
-"MATIC/USD",
-"ADA/USD",
-"VET/USD",
-"SOL/USD",
-"ONE/USD",
-"LINK/USD",
-"IOTA/USD",
-"EOS/USD",
-"ALGO/USD",
-"XLM/USD",
-"VTHO/USD",
-"ZIL/USD",
-"RVN/USD",
-"STORJ/USD",
-"HBAR/USD",
-"ENJ/USD",
-"LTC/USD",
-"HNT/USD",
-"ZRX/USD",
-"WAVES/USD",
-"ETC/USD",
-"NANO/USD",
-"ATOM/USD",
-"BCH/USD",
-"UNI/USD",
-"BAT/USD",
-"ICX/USD",
-"NEO/USD",
-"EGLD/USD",
-"COMP/USD",
-"BAND/USD",
-"ZEC/USD",
-"MANA/USD",
-"OMG/USD",
-"DASH/USD",
-"QTUM/USD"
+            "ETH/USD",
+            "BTC/USD",
+            "KNC/USD",
+            "MATIC/USD",
+            "ADA/USD",
+            "VET/USD",
+            "SOL/USD",
+            "ONE/USD",
+            "LINK/USD",
+            "IOTA/USD",
+            "EOS/USD",
+            "ALGO/USD",
+            "XLM/USD",
+            "VTHO/USD",
+            "ZIL/USD",
+            "RVN/USD",
+            "STORJ/USD",
+            "HBAR/USD",
+            "ENJ/USD",
+            "LTC/USD",
+            "HNT/USD",
+            "ZRX/USD",
+            "WAVES/USD",
+            "ETC/USD",
+            "NANO/USD",
+            "ATOM/USD",
+            "BCH/USD",
+            "UNI/USD",
+            "BAT/USD",
+            "ICX/USD",
+            "NEO/USD",
+            "EGLD/USD",
+            "COMP/USD",
+            "BAND/USD",
+            "ZEC/USD",
+            "MANA/USD",
+            "OMG/USD",
+            "DASH/USD",
+            "QTUM/USD"
         ],
         "pair_blacklist": [
             "BNB/.*",
-	    ".*BULL/USD",
-	    ".*BEAR/USD",
-	    ".*UP/USD",
-	    ".*DOWN/USD",
-	    "BUSD/USD",
-	    "USDC/USD",
-	    "USDT/USD"
-	]
+            ".*BULL/USD",
+            ".*BEAR/USD",
+            ".*UP/USD",
+            ".*DOWN/USD",
+            "BUSD/USD",
+            "USDC/USD",
+            "USDT/USD"
+        ]
     },
     "pairlists": [
-	{"method": "StaticPairList"}
+        {
+            "method": "StaticPairList"
+        }
     ],
     "edge": {
         "enabled": false,
@@ -115,7 +119,7 @@
         "enabled": true,
         "token": "1865785270:AAH0we8W02wzdFAJjC5gk3T0vyKnjHwHFlo",
         "chat_id": "1873992140",
-	"notification_settings": {
+        "notification_settings": {
             "status": "on",
             "warning": "on",
             "startup": "on",
@@ -125,7 +129,7 @@
             "sell_cancel": "on",
             "buy_fill": "on",
             "sell_fill": "on"
-      }
+        }
     },
     "api_server": {
         "enabled": true,
