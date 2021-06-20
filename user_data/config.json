@@ -14,7 +14,7 @@
         "unit": "minutes"
     },
     "bid_strategy": {
-        "price_side": "bid",
+        "price_side": "ask",
         "ask_last_balance": 0.0,
         "use_order_book": false,
         "order_book_top": 1,
@@ -36,7 +36,9 @@
         "name": "binanceus",
         "key": "JH8To1mnRMcIJasnyl3I9nB7INuX0ZP0mJvX35MymYfEeTluRvon2hjhHfDea1P4",
         "secret": "C20J2FwIOeBxwZi5io1GsfFWxwQQysxVEQDlELYVQhrnh5SSYaOGmM4X6aOnBvI0",
-        "ccxt_config": {"enableRateLimit": true},
+        "ccxt_config": {
+            "enableRateLimit": true
+        },
         "ccxt_async_config": {
             "enableRateLimit": true,
             "rateLimit": 200
@@ -46,19 +48,24 @@
         ],
         "pair_blacklist": [
             "BNB/.*",
-	    ".*BULL/USD",
-	    ".*BEAR/USD",
-	    ".*UP/USD",
-	    ".*DOWN/USD",
-	    "BUSD/USD",
-	    "USDC/USD",
-	    "USDT/USD"
-	]
+            ".*BULL/USD",
+            ".*BEAR/USD",
+            ".*UP/USD",
+            ".*DOWN/USD",
+            "BUSD/USD",
+            "USDC/USD",
+            "USDT/USD"
+        ]
     },
     "pairlists": [
-	{"method": "StaticPairList"},
-	{"method": "AgeFilter", "min_days_listed": 14},
-	{
+        {
+            "method": "StaticPairList"
+        },
+        {
+            "method": "AgeFilter",
+            "min_days_listed": 14
+        },
+        {
             "method": "VolumePairList",
             "number_assets": 40,
             "sort_key": "quoteVolume",
@@ -83,7 +90,7 @@
         "enabled": true,
         "token": "1865785270:AAH0we8W02wzdFAJjC5gk3T0vyKnjHwHFlo",
         "chat_id": "1873992140",
-	"notification_settings": {
+        "notification_settings": {
             "status": "on",
             "warning": "on",
             "startup": "on",
@@ -93,7 +100,7 @@
             "sell_cancel": "on",
             "buy_fill": "silent",
             "sell_fill": "silent"
-      }
+        }
     },
     "api_server": {
         "enabled": true,
