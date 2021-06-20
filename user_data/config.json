@@ -97,7 +97,7 @@
             "buy": "silent",
             "sell": "silent",
             "buy_cancel": "silent",
-            "sell_cancel": "on",
+            "sell_cancel": "silent",
             "buy_fill": "silent",
             "sell_fill": "silent"
         }
